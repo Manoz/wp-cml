@@ -542,7 +542,7 @@ a:hover {
 .site {
     padding: 0 24px;
     padding: 0 1.714285714rem;
-    /*background-color: #fff;*/
+    background-color: #fff;
     clear: both;
 }
 
@@ -568,7 +568,7 @@ a:hover {
 
 /* Social media icons top */
 .social-media-top {
-    margin: 0 auto;
+    margin: 10px auto 0px auto;
     max-width: 960px;
     max-width: 68.571428571rem;
     overflow: hidden;
@@ -1617,7 +1617,7 @@ img#wpstats {
     }
     .site {
         margin: 0 auto;
-        max-width: 980px;
+        max-width: 960px;
         overflow: hidden;
     }
     .site-content {
