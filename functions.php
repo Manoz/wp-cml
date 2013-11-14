@@ -494,3 +494,56 @@ add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
 		return 35;
 	}
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+        
+        
+        
+        
+ /**
+ * Déclaration du custom post type membre 
+ *
+ * @param None
+ * @return void
+ */       
+function custom_membre() {
+
+	$labels = array(
+		'name'                => 'Membres',
+		'singular_name'       => 'Membre',
+		'menu_name'           => 'Membres',
+		'parent_item_colon'   => '',
+		'all_items'           => 'Tous les membres',
+		'view_item'           => 'Voir le membre',
+		'add_new_item'        => 'Ajouter un nouveau membre',
+		'add_new'             => 'Nouveau membre',
+		'edit_item'           => 'Modifier le membre',
+		'update_item'         => 'Mettre à jour le membre',
+		'search_items'        => 'Rechercher un membre',
+		'not_found'           => 'Aucun membre trouvé',
+		'not_found_in_trash'  => 'Aucun membre trouvé dans la corbeille',
+	);
+	$args = array(
+		'label'               => 'membre',
+		'description'         => 'Les membres du bureau',
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
+		'taxonomies'          => array( '' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'          => get_bloginfo('template_directory') . '/images/default.png',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+	);
+	register_post_type( 'membre', $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'custom_membre', 0 );
