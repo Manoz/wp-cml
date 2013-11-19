@@ -408,6 +408,7 @@ nav[role="navigation"] div > ul > li.current_page_parent > a,
 nav[role="navigation"] div > ul > li.current-menu-ancestor > a,
 nav[role="navigation"] div > ul > li > a:hover,
 nav[role="navigation"] div > ul > li:hover > a {
+    /* =TODO - Penser à changer l'url du bg pour la prod */
     background: #D21616 url(http://communitymanagerslyon.com/wp-content/themes/rttheme17/images/menu-top.png) center top no-repeat;
     color: #fff;
     -moz-transition: all .3s ease-out;
@@ -603,6 +604,7 @@ a:hover {
 
 .shadow-left {
     width: 20px;
+    /* =TODO - Penser à changer l'url du bg pour la prod */
     background: url(http://communitymanagerslyon.com/wp-content/themes/rttheme17/images/logo-shadow.png) 4px 0 no-repeat;
     height: 100px;
     float: left;
@@ -610,6 +612,7 @@ a:hover {
 
 .shadow-right {
     width: 20px;
+    /* =TODO - Penser à changer l'url du bg pour la prod */
     background: url(http://communitymanagerslyon.com/wp-content/themes/rttheme17/images/logo-shadow.png) -25px 0 no-repeat;
     height: 100px;
     float: left;
@@ -866,7 +869,7 @@ footer[role="contentinfo"] a:hover {
     font-weight: normal;
 }
 .membre .entry-header .entry-title{
-  text-align: center; 
+  text-align: center;
 }
 .entry-header .entry-title a {
     text-decoration: none;
@@ -1554,6 +1557,7 @@ a.comment-edit-link:hover {
 -------------------------------------------------------------- */
 
 .transparent-line {
+    /* =TODO - Penser à changer l'url du bg pour la prod */
     background: url(http://communitymanagerslyon.com/wp-content/themes/rttheme17/images/transparent-white.png);
     height: 10px;
     margin: 0 auto;
