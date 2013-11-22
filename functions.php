@@ -507,9 +507,9 @@ add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
 function custom_membre() {
 
 	$labels = array(
-		'name'                => 'Membres',
-		'singular_name'       => 'Membre',
-		'menu_name'           => 'Membres',
+		'name'                => 'Membres du bureau',
+		'singular_name'       => 'Membre du bureau',
+		'menu_name'           => 'Membres bureau',
 		'parent_item_colon'   => '',
 		'all_items'           => 'Tous les membres',
 		'view_item'           => 'Voir le membre',
@@ -522,7 +522,7 @@ function custom_membre() {
 		'not_found_in_trash'  => 'Aucun membre trouvé dans la corbeille',
 	);
 	$args = array(
-		'label'               => 'membre',
+		'label'               => 'bureau',
 		'description'         => 'Les membres du bureau',
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
@@ -539,10 +539,10 @@ function custom_membre() {
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page',
+		'capability_type'     => 'post',
 	);
-	register_post_type( 'membre', $args );
-
+	register_post_type( 'bureau', $args );
+        // CHANGER MEMBRE EN BUREAU //
 }
 
 // Hook into the 'init' action
