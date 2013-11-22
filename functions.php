@@ -504,7 +504,8 @@ add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
  * @param None
  * @return void
  */       
-function custom_membre() {
+        
+function custom_bureau() {
 
 	$labels = array(
 		'name'                => 'Membres du bureau',
@@ -546,4 +547,4 @@ function custom_membre() {
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'custom_membre', 0 );
+add_action( 'init', 'custom_bureau', 0 );
