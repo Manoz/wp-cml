@@ -408,7 +408,6 @@ nav[role="navigation"] div > ul > li.current_page_parent > a,
 nav[role="navigation"] div > ul > li.current-menu-ancestor > a,
 nav[role="navigation"] div > ul > li > a:hover,
 nav[role="navigation"] div > ul > li:hover > a {
-    /* =TODO - Penser à changer l'url du bg pour la prod */
     background: #D21616 url(images/menu-top.png) center top no-repeat;
     color: #fff;
     -moz-transition: all .3s ease-out;
@@ -604,7 +603,6 @@ a:hover {
 
 .shadow-left {
     width: 20px;
-    /* =TODO - Penser à changer l'url du bg pour la prod */
     background: url(images/logo-shadow.png) 4px 0 no-repeat;
     height: 100px;
     float: left;
@@ -612,7 +610,6 @@ a:hover {
 
 .shadow-right {
     width: 20px;
-    /* =TODO - Penser à changer l'url du bg pour la prod */
     background: url(images/logo-shadow.png) -25px 0 no-repeat;
     height: 100px;
     float: left;
