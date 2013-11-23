@@ -50,7 +50,7 @@
     </ul>
 </div>
 <div id="container">
-    <div class="transparent-line"></div>
+    <div class="red-line"></div>
     <div class="content-wrapper">
         <header id="masthead" class="site-header clearfix" role="banner">
             <div id="logo" class="clearfix   ">
