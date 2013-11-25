@@ -535,7 +535,7 @@ function custom_bureau() {
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
 		'menu_position'       => 5,
-		'menu_icon'          => get_bloginfo('template_directory') . '/images/default.png',
+		'menu_icon'          => get_bloginfo('template_directory') . '/images/user.png',
 		'can_export'          => true,
 		'has_archive'         => true,
 		'exclude_from_search' => false,
@@ -548,3 +548,57 @@ function custom_bureau() {
 
 // Hook into the 'init' action
 add_action( 'init', 'custom_bureau', 0 );
+
+
+ 
+        
+ /**
+ * Déclaration du custom post type interview 
+ *
+ * @param None
+ * @return void
+ */       
+        
+function custom_interview() {
+
+	$labels = array(
+		'name'                => 'Interviews',
+		'singular_name'       => 'Interview',
+		'menu_name'           => 'Interviews',
+		'parent_item_colon'   => '',
+		'all_items'           => 'Toutes les interviews',
+		'view_item'           => 'Voir l\'interview',
+		'add_new_item'        => 'Ajouter une interview',
+		'add_new'             => 'Nouvelle interview',
+		'edit_item'           => 'Modifier l\'interview',
+		'update_item'         => 'Mettre à jour l\'interview',
+		'search_items'        => 'Rechercher une interview',
+		'not_found'           => 'Aucune interview trouvée',
+		'not_found_in_trash'  => 'Aucune interview trouvée dans la corbeille',
+	);
+	$args = array(
+		'label'               => 'interview',
+		'description'         => 'Les interviews',
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', ),
+		'taxonomies'          => array( '' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'          => get_bloginfo('template_directory') . '/images/microphone.png',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+	);
+	register_post_type( 'interview', $args );
+        // CHANGER MEMBRE EN BUREAU //
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'custom_interview', 0 );
