@@ -3,6 +3,7 @@ Theme Name: CML
 Theme URI: http://communitymanagerslyon.com/
 Author: CML
 Author URI: http://communitymanagerslyon.com/
+Version: 1.0
 Description: Simple theme for our Website based on Twenty Twelve by Wordpress.
 */
 
@@ -1649,10 +1650,10 @@ a.comment-edit-link:hover {
     height: 80px;
     text-align: left;
     box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.05);
-}   
+}
 
 
-.liste-membres-bureau .membre-bureau h1, 
+.liste-membres-bureau .membre-bureau h1,
 .liste-membres-bureau .membre-bureau h1 a{
     color: #D21616;
     font-family: 'Exo', sans-serif;
@@ -1667,7 +1668,7 @@ a.comment-edit-link:hover {
     font-size: 1em;
     font-weight: 300;
     margin-top: 10px;
-} 
+}
 
 .membre-bureau span.post-meta-key{
     display: none;
@@ -1809,7 +1810,7 @@ img#wpstats {
         padding: 15px 15px 15px 0px;
         color: #D21616;
         line-height: 40px;
-    } 
+    }
     .entry-header .entry-title:before {
         content : ">";
         font-size: 0.5em;
@@ -1823,7 +1824,7 @@ img#wpstats {
         background: #D21616;
         margin-right: 8px;
     }
-    
+
 
     #respond form input[type="text"] {
         width: 46.333333333%;
@@ -1879,7 +1880,7 @@ img#wpstats {
         margin-left: 48px;
         margin-left: 3.428571429rem;
     }
-    
+
 
 
     /* =Liste des membres du bureau
@@ -1895,9 +1896,9 @@ img#wpstats {
         display: inline-block;
         height: 80px;
         box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.05);
-    }    
-    
-    
+    }
+
+
 }
 
 /* Minimum width of 960 pixels. */
@@ -1919,7 +1920,7 @@ img#wpstats {
         margin-bottom: 0;
         box-shadow: none;
     }
-    
+
 
     /* =Liste des membres du bureau
     ------------------------------------------------*/
@@ -1934,9 +1935,9 @@ img#wpstats {
         display: inline-block;
         height: 80px;
         box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.05);
-    }    
-    
-        
+    }
+
+
 }
 
 
