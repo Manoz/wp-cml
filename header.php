@@ -37,13 +37,13 @@
     <ul class="social_media_icons">
         <li>
             <a target="_blank" href="http://www.twitter.com/ClubCML" title="Twitter">
-                <img src="http://communitymanagerslyon.com/wp-content/themes/rttheme17/images/assets/social_media/icon-twitter.png" width="24" height="24" alt="" style="opacity: 1;">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/assets/social_media/icon-twitter.png" width="24" height="24" alt="" style="opacity: 1;">
                 <div class="social_tip" style="display: none; opacity: 0;">Twitter</div>
             </a>
         </li>
         <li>
             <a target="_blank" href="https://www.facebook.com/groups/Clubdescommunitymanagersdelyon/" title="Facebook">
-                <img src="http://communitymanagerslyon.com/wp-content/themes/rttheme17/images/assets/social_media/icon-facebook.png" width="24" height="24" alt="" style="opacity: 1;">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/assets/social_media/icon-facebook.png" width="24" height="24" alt="" style="opacity: 1;">
                 <div class="social_tip" style="display: none; opacity: 0;">Facebook</div>
             </a>
         </li>
@@ -58,7 +58,7 @@
                 <div class="logo-holder">
                     <div class="transparent-line logo"></div>
                     <div class="logo-background">
-                        <a href="http://communitymanagerslyon.com" title="Club des Community Managers de Lyon"><img src="http://communitymanagerslyon.com/wp-content/uploads/2013/04/logo_CML_final.png" alt="Club des Community Managers de Lyon" class="png"></a>
+                        <a href="http://communitymanagerslyon.com" title="Club des Community Managers de Lyon"><img src="<?php echo get_template_directory_uri(); ?>/logo_CML.png" alt="Club des Community Managers de Lyon" class="png"></a>
                     </div>
                 </div>
                 <div class="shadow-right"></div>
@@ -67,7 +67,7 @@
             <nav id="site-navigation" class="main-navigation" role="navigation">
                 <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
                 <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'show_home' => false ) ); ?>
             </nav><!-- #site-navigation -->
 
             <?php $header_image = get_header_image();

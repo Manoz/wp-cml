@@ -223,10 +223,17 @@ add_filter( 'wp_title', 'twentytwelve_wp_title', 10, 2 );
  */
 function twentytwelve_page_menu_args( $args ) {
 	if ( ! isset( $args['show_home'] ) )
-		$args['show_home'] = true;
+		$args['show_home'] = false;
 	return $args;
 }
 add_filter( 'wp_page_menu_args', 'twentytwelve_page_menu_args' );
+
+function mytheme_nav_menu_args( $args ) {
+    $args['show_home'] = false;
+    return $args;
+}
+add_filter( 'wp_nav_menu_args', 'mytheme_nav_menu_args' );
+
 
 /**
  * Registers our main widget area and the front page widget areas.
