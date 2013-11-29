@@ -587,7 +587,7 @@ function custom_interview() {
 		'label'               => 'interview',
 		'description'         => 'Les interviews',
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', ),
+		'supports'            => array( 'title', 'editor', 'excerpt', ),
 		'taxonomies'          => array( '' ),
 		'hierarchical'        => false,
 		'public'              => true,
@@ -609,3 +609,6 @@ function custom_interview() {
 
 // Hook into the 'init' action
 add_action( 'init', 'custom_interview', 0 );
+
+
+
