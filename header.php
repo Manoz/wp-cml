@@ -58,16 +58,16 @@
                 <div class="logo-holder">
                     <div class="transparent-line logo"></div>
                     <div class="logo-background">
-                        <a href="http://communitymanagerslyon.com" title="Club des Community Managers de Lyon"><img src="<?php echo get_template_directory_uri(); ?>/logo_CML.png" alt="Club des Community Managers de Lyon" class="png"></a>
+                        <a href="/" title="Club des Community Managers de Lyon"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_CML.png" alt="Club des Community Managers de Lyon" class="png"></a>
                     </div>
                 </div>
                 <div class="shadow-right"></div>
             </div>
 
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
-                <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'show_home' => false ) ); ?>
+                 <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
+                 <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
+                 <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
             </nav><!-- #site-navigation -->
 
             <?php $header_image = get_header_image();

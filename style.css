@@ -442,6 +442,7 @@ nav[role="navigation"] div ul ul a {
 .previous-image {
     float: left;
     width: 50%;
+    
 }
 .nav-next,
 .next-image {
@@ -845,6 +846,11 @@ footer[role="contentinfo"] a:hover {
 
 .entry-meta {
     clear: both;
+    background: #fff;
+    padding: 10px;
+    -webkit-box-shadow: 0 5px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 5px 0 rgba(0,0,0,0.05);
+
 }
 .entry-header {
     margin-bottom: 24px;
@@ -1140,6 +1146,38 @@ img.aligncenter,
     -moz-hyphens: auto;
     hyphens: auto;
 }
+.site-content article.interview {
+    border-bottom: 0px double #ededed;
+    margin-bottom: 50px;
+    margin-bottom: 3;
+    padding-bottom: 15px;
+    padding-bottom: 1.3em;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.site-content article.interview {
+    border-bottom: 0px double #ededed;
+    margin-bottom: 50px;
+    margin-bottom: 3;
+    padding-bottom: 15px;
+    padding-bottom: 1.3em;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.site-content article.interview a{
+    color: #D21616;
+    text-decoration: none;
+}
+.site-content article.interview a:hover{
+    color: #21759b;
+}
+
 .page-links {
     clear: both;
     line-height: 1.714285714;

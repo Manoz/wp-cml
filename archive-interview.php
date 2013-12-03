@@ -25,11 +25,10 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
                     
                         <header class="entry-header">
-                                <h1 class="entry-title">Les membres du bureau</h1>
-                                Comme toute association, le Club des Community Managers compte avec les membres du bureau. Dans notre cas, le CML est fièrement propulsé par :
+                                <h1 class="entry-title">Les interviews</h1>
                         </header>			
 
-                        <div class="liste-membres-bureau">
+                        <div class="entry-content">
                             <?php
                             /* Start the Loop for membres du bureau */
                             while ( have_posts() ) : the_post();

@@ -7,9 +7,10 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-    <div class="membre-bureau">
-        <div class="membrebureau-content">
-                <h1 class=""><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-                <?php the_meta(); ?>
-        </div><!-- .entry-content -->
-    </div>
+	<article id="post-<?php the_ID(); ?>" <?php post_class("interview"); ?>>
+
+		<div class="entry-content list-interview">
+			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+		</div><!-- .entry-content -->
+
+	</article><!-- #post -->

@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content">
-		<div id="content" role="main" class="membre-bureau">
+		<div id="content" role="main" class="interview">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
