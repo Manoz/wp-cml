@@ -9,6 +9,7 @@
 ?>
     <div class="membre-bureau">
         <div class="membrebureau-content">
+                 <?php the_post_thumbnail('medium'); ?>
                 <h1 class=""><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                 <?php the_meta(); ?>
         </div><!-- .entry-content -->
