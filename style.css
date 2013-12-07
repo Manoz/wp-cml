@@ -398,7 +398,7 @@ nav[role="navigation"] div > ul > li > a {
     text-decoration:none;
     line-height:16px;
     display:block;
-    padding:54px 10xp 10px;
+    padding:54px 10px 10px;
     margin:0 0 1px 0;
     font-family: 'Exo', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -442,7 +442,7 @@ nav[role="navigation"] div ul ul a {
 .previous-image {
     float: left;
     width: 50%;
-    
+
 }
 .nav-next,
 .next-image {
@@ -586,10 +586,11 @@ a:hover {
 }
 
 .social-media-top ul li {
-    float: right;
     display: inline-block;
-    vertical-align: top;
+    float: right;
     zoom: 1; /* Fix for IE7 */
+    margin-left: 10px;
+    vertical-align: top;
     *display: inline; /* Fix for IE7 */
 }
 
@@ -860,6 +861,40 @@ footer[role="contentinfo"] a:hover {
     box-shadow: 0 5px 0 rgba(0,0,0,0.05);
     padding: 20px;
 }
+
+.date {
+    float: left;
+    color: #fff;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 100% !important;
+    text-align: center;
+    padding: 10px 0 0 0;
+    width: 60px;
+    margin: 0 20px 0 0;
+    background-color: #D21616;
+}
+
+.date .day {
+    font-size: 42px;
+    font-style: normal;
+    display: block;
+    line-height: 120%;
+}
+
+.date .year {
+    font-size: 12px;
+    font-style: normal;
+    display: block;
+    height: 20px;
+    line-height: 100% !important;
+    padding-top: 9px;
+    background-color: #bc1413;
+}
+
+.title-comments a {color: #afafaf; font-size: 12px;}
+.title-comments a:hover {color: #777;}
+
 .entry-header img.wp-post-image {
     margin-bottom: 24px;
     margin-bottom: 1.714285714rem;
@@ -1136,9 +1171,6 @@ img.aligncenter,
     padding: 6px 10px 6px 0;
 }
 .site-content article {
-    border-bottom: 4px double #ededed;
-    margin-bottom: 72px;
-    margin-bottom: 5.142857143rem;
     padding-bottom: 24px;
     padding-bottom: 1.714285714rem;
     word-wrap: break-word;
@@ -1377,13 +1409,19 @@ article.format-quote .entry-content blockquote {
 /* =Comments
 -------------------------------------------------------------- */
 
+.comments-area {
+    background-color: #fff;
+    padding: 15px;
+}
+
 .comments-title {
-    margin-bottom: 48px;
-    margin-bottom: 3.428571429rem;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
     font-size: 16px;
     font-size: 1.142857143rem;
     line-height: 1.5;
     font-weight: normal;
+    border-bottom: 1px solid #eee;
 }
 .comments-area article {
     margin: 24px 0;
@@ -1849,8 +1887,9 @@ img#wpstats {
         padding: 15px 15px 15px 0px;
         color: #D21616;
         line-height: 40px;
+        display: inline-block;
     }
-    .entry-header .entry-title:before {
+    /*.entry-header .entry-title:before {
         content : ">";
         font-size: 0.5em;
         color: #fff;
@@ -1862,8 +1901,7 @@ img#wpstats {
         width: 13px;
         background: #D21616;
         margin-right: 8px;
-    }
-
+    }*/
 
     #respond form input[type="text"] {
         width: 46.333333333%;
