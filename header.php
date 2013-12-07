@@ -58,7 +58,8 @@
                 <div class="logo-holder">
                     <div class="transparent-line logo"></div>
                     <div class="logo-background">
-                        <a href="/" title="Club des Community Managers de Lyon"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_CML.png" alt="Club des Community Managers de Lyon" class="png"></a>
+                        <!-- Temp url pour que ce soit plus pratique tant que c'est en préprod -->
+                        <a href="http://mwanoz.fr/cml/" title="Club des Community Managers de Lyon"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_CML.png" alt="Club des Community Managers de Lyon" class="png"></a>
                     </div>
                 </div>
                 <div class="shadow-right"></div>

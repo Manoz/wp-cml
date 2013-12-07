@@ -506,10 +506,10 @@ body.custom-font-enabled {
 }
 a {
     outline: none;
-    color: #21759b;
+    color: #D21616;
 }
 a:hover {
-    color: #0f3647;
+    color: #AC1212;
 }
 
 #container {
@@ -1410,19 +1410,100 @@ article.format-quote .entry-content blockquote {
 -------------------------------------------------------------- */
 
 .comments-area {
-    background-color: #fff;
+    margin-bottom: 5px;
     padding: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 5px 0 rgba(0,0,0,0.05);
 }
 
 .comments-title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
     font-size: 16px;
     font-size: 1.142857143rem;
-    line-height: 1.5;
     font-weight: normal;
-    border-bottom: 1px solid #eee;
+    line-height: 1.5;
 }
+
+ol.commentlist li.comment {
+    display: block;
+    float: none;
+    clear: both;
+    margin: 0 0 20px 0;
+    padding: 0;
+    border: 0;
+    list-style-position: outside;
+}
+
+.comment-avatar {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.comment-body {
+    float: right;
+    width: 86%;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #F0F0F0;
+    -webkit-box-shadow: 2px 2px 1px RGBa(0,0,0,0.035);
+    box-shadow: 2px 2px 1px RGBa(0,0,0,0.035);
+    -moz-box-box-shadow: 2px 2px 1px RGBa(0,0,0,0.035);
+}
+
+.meta-comment {
+    height: 24px;
+    margin: 0 0 10px 0;
+    padding: 5px 3px 3px 6px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.author-name {
+    float: left;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.author-name a {color: #818181;}
+.author-name a:hover {color: #464646;}
+
+.date-reply {
+    float: right;
+    position: relative;
+    font-size: 11px;
+}
+
+.date-reply a {color: #9F9F9F;}
+
+.author-name a,
+.date-reply a {
+    text-decoration: none;
+}
+
+.reply-button {
+    margin: 0 0 0 5px;
+    padding: 4px 8px;
+    text-decoration: none !important;
+    background: #E4E4E4;
+}
+
+.reply-button:hover {background: #B7B7B7;}
+
+p.comment-awaiting-moderation {
+    font-size: 13px;
+    font-style: italic;
+    color: #D21616;
+    margin-bottom: 5px;
+}
+
+.comment-text p {
+    color: #818181;
+    font-size: 12px;
+}
+
+/* Old styles */
 .comments-area article {
     margin: 24px 0;
     margin: 1.714285714rem 0;
@@ -1507,14 +1588,13 @@ article.format-quote .entry-content blockquote {
 }
 a.comment-reply-link,
 a.comment-edit-link {
-    color: #686868;
-    font-size: 13px;
-    font-size: 0.928571429rem;
+    font-size: 11px;
+    margin-right: 6px;
     line-height: 1.846153846;
 }
 a.comment-reply-link:hover,
 a.comment-edit-link:hover {
-    color: #21759b;
+    color: #fff;
 }
 .commentlist .pingback {
     line-height: 1.714285714;
@@ -1526,8 +1606,6 @@ a.comment-edit-link:hover {
 #respond {
     margin-top: 48px;
     margin-top: 3.428571429rem;
-    -webkit-box-shadow: 0 5px 0 rgba(0,0,0,0.05);
-    box-shadow: 0 5px 0 rgba(0,0,0,0.05);
     background-color: #fff;
     padding: 10px;
 }

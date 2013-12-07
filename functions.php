@@ -321,29 +321,29 @@ function twentytwelve_comment( $comment, $args, $depth ) {
         global $post;
     ?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-        <div id="comment-<?php comment_ID(); ?>" class="comment">
-            <div class="comment-avatar">
-                <?php echo get_avatar( $comment, 44 );?>
+            <div class="comment-avatar"><?php echo get_avatar( $comment, 44 );?></div>
+
+            <div id="comment-<?php comment_ID(); ?>" class="comment-body">
+                <div class="meta-comment">
+                    <span class="author-name">
+                        <?php printf(__('%s'), get_comment_author_link()) ?>
+                    </span>
+                    <span class="date-reply">
+                        <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"> <?php $d = "j F Y"; $comment_date = get_comment_date( $d, $comment_ID ); echo $comment_date; ?></a>
+                        <span class="reply-button">
+                            <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'twentytwelve' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+                        </span>
+                    </span>
+                </div>
+
+                <?php if ( '0' == $comment->comment_approved ) : ?>
+                    <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentytwelve' ); ?></p>
+                <?php endif; ?>
+
+                <div class="comment-text"><?php comment_text(); ?></div>
             </div>
 
-            <div class="meta-comment">
-                <span class="author-name">
-                    <?php printf(__('<cite class="author">%s</cite>'), get_comment_author_link()) ?>
-                </span>
-                <span class="comment-date">
-                    <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"> &middot; <?php echo get_comment_date(); ?></a>
-                </span>
-                <span class="comment-reply">
-                    <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'twentytwelve' ), 'after' => ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-                </span>
-            </div>
-
-            <?php if ( '0' == $comment->comment_approved ) : ?>
-                <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentytwelve' ); ?></p>
-            <?php endif; ?>
-
-            <div class="comment-text"><?php comment_text(); ?></div>
-        </div>
+        <div class="clearfix"></div>
 
     <?php
         break;
