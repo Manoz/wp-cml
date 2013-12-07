@@ -329,7 +329,7 @@ function twentytwelve_comment( $comment, $args, $depth ) {
                         <?php printf(__('%s'), get_comment_author_link()) ?>
                     </span>
                     <span class="date-reply">
-                        <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"> <?php $d = "j F Y"; $comment_date = get_comment_date( $d, $comment_ID ); echo $comment_date; ?></a>
+                        <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s à %2$s'), get_comment_date(), get_comment_time()) ?></a>
                         <span class="reply-button">
                             <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'twentytwelve' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
                         </span>
