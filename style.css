@@ -493,14 +493,16 @@ html {
     font-size: 87.5%;
 }
 body {
+    position: relative;
+    font-family: Helvetica,Arial,sans-serif;
     font-size: 14px;
     font-size: 1rem;
-    font-family: Helvetica, Arial, sans-serif;
-    text-rendering: optimizeLegibility;
     color: #444;
+    background: #f0f0f0 url('images/white_wall_hash1.png');
     background-color: #f0f0f0;
-    position: relative;
+    text-rendering: optimizeLegibility;
 }
+
 body.custom-font-enabled {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
