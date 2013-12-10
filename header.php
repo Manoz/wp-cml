@@ -36,6 +36,9 @@
 <meta property="og:url" content="<?php echo bloginfo ( 'wpurl' );  ?>"/>
 <meta property="og:type" content="blog"/>
 <meta property="og:description" content="<?php echo bloginfo ( 'description' );  ?>">
+<!-- TODO: Add G+ ID and remove this comment
+<link rel="author" href="https://plus.google.com/xxxxxxxxxxxxxxxxxxxx/posts">
+-->
 </head>
 
 <body <?php body_class(); ?>>
