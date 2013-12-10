@@ -18,7 +18,7 @@ get_header(); ?>
 </div>
 <div class="banner-holder clearfix">
     <div class="banner clearfix">
-        <a href="#" class="banner-button alignright">En savoir plus</a>
+        <a href="http://communitymanagerslyon.com/lassociation/" class="banner-button alignright">En savoir plus</a>
         <div class="featured-text withbutton">
             <p>Une association créée par et pour des community managers Lyonnais. <br> Nos objectifs : l'échange de bonnes pratiques et la promotion du métier.</p>
         </div>
