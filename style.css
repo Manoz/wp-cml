@@ -751,10 +751,12 @@ a.banner-button:hover {
     font-weight: 400;
 }
 
-.banner .withbutton p {
+.banner .withbutton h1,
+.banner .withbutton h2 {
+    clear: none;
     padding: 8px 0 0 0;
+    font-weight: 400;
 }
-
 
 /* Sidebar */
 .widget-area .widget {
