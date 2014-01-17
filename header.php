@@ -19,26 +19,25 @@
 <html <?php language_attributes();  ?>>
 <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<link href='http://fonts.googleapis.com/css?family=Exo:300,400,600' rel='stylesheet' type='text/css'>
-<?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-<?php wp_head(); ?>
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <link href='http://fonts.googleapis.com/css?family=Exo:300,400,600' rel='stylesheet' type='text/css'>
+    <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
+    <!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <?php wp_head(); ?>
 
-<!-- Facebook and G+ meta -->
-<meta property="og:title" content="<?php echo bloginfo ( 'name' );  ?>"/>
-<meta property="og:url" content="<?php echo bloginfo ( 'wpurl' );  ?>"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:description" content="<?php echo bloginfo ( 'description' );  ?>">
-<!-- TODO: Add G+ ID and remove this comment
-<link rel="author" href="https://plus.google.com/xxxxxxxxxxxxxxxxxxxx/posts">
--->
+    <!-- Facebook and G+ meta -->
+    <meta property="og:title" content="<?php echo bloginfo ( 'name' );  ?>"/>
+    <meta property="og:url" content="<?php echo bloginfo ( 'wpurl' );  ?>"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:description" content="<?php echo bloginfo ( 'description' );  ?>"/>
+    <meta property="og:image" content="http://communitymanagerslyon.com/logo-meta-fb.png"/>
+    <link rel="author" href="https://plus.google.com/+Communitymanagerslyon69/posts">
 </head>
 
 <body <?php body_class(); ?>>
